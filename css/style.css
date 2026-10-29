@@ -977,10 +977,9 @@ body {
   transform: scale(1.15) rotate(5deg);
 }
 .thor-avatar-img {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 68px;
   object-fit: contain;
-  image-rendering: pixelated;
   filter: drop-shadow(0 4px 10px rgba(0, 229, 201, 0.45));
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   display: block;
@@ -4617,15 +4616,12 @@ body {
 /* ------- FAB TOGGLE BUTTON ------- */
 .thor-chat-fab {
   position: relative;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
+  width: 82px;
+  height: 92px;
+  border-radius: 0;
   border: none;
-  background: radial-gradient(135deg, #1a0a2e 0%, #0d1f1a 100%);
-  box-shadow:
-    0 0 0 3px rgba(77, 255, 154, 0.45),
-    0 8px 32px rgba(0, 0, 0, 0.55),
-    0 2px 8px rgba(77, 255, 154, 0.2);
+  background: transparent;
+  box-shadow: none;
   cursor: pointer;
   overflow: visible;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
@@ -4636,10 +4632,7 @@ body {
 
 .thor-chat-fab:hover {
   transform: scale(1.12) rotate(-5deg);
-  box-shadow:
-    0 0 0 4px rgba(77, 255, 154, 0.7),
-    0 12px 40px rgba(0, 0, 0, 0.65),
-    0 4px 16px rgba(77, 255, 154, 0.35);
+  box-shadow: none;
 }
 
 .thor-chat-fab:active {
@@ -4648,10 +4641,10 @@ body {
 
 /* The avatar image inside FAB */
 .thor-fab-avatar {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 82px;
+  height: 92px;
+  border-radius: 0;
+  object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
   transition: filter 0.25s ease;
@@ -4732,13 +4725,13 @@ body {
 }
 
 .thor-header-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 58px;
+  height: 68px;
+  border-radius: 0;
+  object-fit: contain;
   object-position: center;
-  border: 2px solid rgba(77, 255, 154, 0.4);
-  box-shadow: 0 0 12px rgba(77, 255, 154, 0.25);
+  border: none;
+  box-shadow: none;
 }
 
 .thor-status-dot {
@@ -5060,13 +5053,13 @@ body {
   }
 
   .thor-chat-fab {
-    width: 60px;
-    height: 60px;
+    width: 68px;
+    height: 78px;
   }
 
   .thor-fab-avatar {
-    width: 50px;
-    height: 50px;
+    width: 68px;
+    height: 78px;
   }
 }
 
