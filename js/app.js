@@ -2432,7 +2432,7 @@ function openResumeModal() {
 const faqAnswers = {
   stack: "Syed builds responsive websites and custom web apps with React, Node.js, Python, Django, REST APIs, and Firebase. He can also help with databases, integrations, and deployment.",
   projects: "Browse the selected work section for business websites and web apps, including travel, fitness, property, retail, and e-commerce projects. Open a project card for its features and tools.",
-  education: "Syed is pursuing a Bachelor of Engineering (B.E.) in Computer Science and Engineering at The Meenakshi College of Engineering, Chennai (2023 – 2027).",
+  education: "Syed has a background in Computer Science and Engineering, with coursework in databases, data structures and algorithms, operating systems, networking, and cloud architecture.",
   contact: "Have a project in mind? Email Syed at azhar12082006@gmail.com or use the project enquiry form at the bottom of the page."
 };
 
@@ -2606,12 +2606,12 @@ function initThorChat() {
 
     // 2. RESUME / CV / PDF DOWNLOAD
     if (has('resume', 'cv', 'pdf') || phrase('download resume') || phrase('view resume') || phrase('get resume')) {
-      return `📄 Azhar's official resume is available directly on this portfolio!\n\nYou can view and download his verified resume PDF (<strong>Syed_Azhar_Hussain_Resume.pdf</strong>) by clicking the <strong>"Download Resume 📄"</strong> button in the hero card or the contact checklist.\n\nIt contains his verified academic record (B.E. CSE 2023–2027), internships at Trios Technologies & Cognifyz, verified credentials, and complete technical competencies! ⚡`;
+      return `📄 Azhar's resume is available in the portfolio. It highlights his technical skills, project work, professional experience, and certifications. ⚡`;
     }
 
     // 3. EDUCATION / COLLEGE / DEGREE / UNIVERSITY / CGPA
-    if (has('education', 'college', 'degree', 'university', 'study', 'studying', 'studied', 'academic', 'academics', 'school', 'meenakshi', 'gpa', 'cgpa', 'graduating', 'graduation', 'bachelor', 'engineering') || phrase('what did he study') || phrase('where did he study')) {
-      return `🎓 <strong>Academic Background (from official resume):</strong>\n\n📜 <strong>Degree:</strong> Bachelor of Engineering (B.E.) in Computer Science and Engineering\n🏛️ <strong>Institution:</strong> The Meenakshi College of Engineering, Chennai, India\n🗓️ <strong>Duration:</strong> 2023 – 2027\n\nAzhar maintains a strong focus on software engineering, data structures, full-stack web applications, and database architecture! ✈️`;
+    if (has('education', 'college', 'degree', 'university', 'study', 'studying', 'studied', 'academic', 'academics', 'school', 'gpa', 'cgpa', 'graduating', 'graduation', 'bachelor', 'engineering') || phrase('what did he study') || phrase('where did he study')) {
+      return `🎓 <strong>Education:</strong> Computer Science and Engineering, with a focus on software engineering, data structures, full-stack web applications, and database architecture.`;
     }
 
     // 4. SPECIFIC INTERNSHIPS
@@ -2754,7 +2754,7 @@ function initThorChat() {
 
     // 11. BOT IDENTITY / THOR PERSONA
     if (phrase('who are you') || phrase('what are you') || phrase('your name') || phrase('what can you do') || (has('who') && has('you'))) {
-      return `⚡ I am <strong>THOR</strong>, the portfolio AI guardian for Syed Azhar Hussain!\n\nI am powered directly by Azhar's verified resume data. I can tell you about:\n• 💼 <strong>Projects & client builds</strong>\n• 🏢 <strong>Internships at Trios & Cognifyz</strong>\n• ⚙️ <strong>Technical stack (React, Python, Node, Firebase, SQL)</strong>\n• 🎓 <strong>Education & college details (B.E. CSE 2023–2027)</strong>\n• 🏆 <strong>7 verified certifications</strong>\n• 📩 <strong>How to contact or hire him</strong>\n\nWhat wisdom do you seek, warrior? ⚔️`;
+      return `⚡ I am <strong>THOR</strong>, the portfolio AI guide for Syed Azhar Hussain!\n\nAsk me about:\n• 💼 <strong>Projects and client builds</strong>\n• ⚙️ <strong>Technical stack and services</strong>\n• 🏆 <strong>Certifications</strong>\n• 📩 <strong>How to discuss a project</strong>\n\nWhat can I help you explore? ⚔️`;
     }
 
     // 12. GREETINGS
