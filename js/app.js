@@ -2778,7 +2778,7 @@ function initThorChat() {
 
     if (role === 'bot') {
       const avatar = document.createElement('img');
-      avatar.src = 'assets/images/thor-avatar-raw.png';
+      avatar.src = 'assets/images/thor-avatar.png';
       avatar.alt = 'Thor';
       avatar.classList.add('thor-msg-avatar');
       msg.appendChild(avatar);
@@ -2806,7 +2806,7 @@ function initThorChat() {
     row.id = 'thorTypingRow';
 
     const avatar = document.createElement('img');
-    avatar.src = 'assets/images/thor-avatar-raw.png';
+    avatar.src = 'assets/images/thor-avatar.png';
     avatar.alt = 'Thor';
     avatar.classList.add('thor-msg-avatar');
     row.appendChild(avatar);
