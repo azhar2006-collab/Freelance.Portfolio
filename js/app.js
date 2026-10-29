@@ -2372,7 +2372,6 @@ function applyScanlines() {
    ========================================================================== */
 function initContactChecklistAndForm() {
   const checkItems = document.querySelectorAll('.check-item');
-  const resumeItem = document.getElementById('checkDownloadResume');
   const form = document.getElementById('contactForm');
 
   checkItems.forEach(item => {
@@ -2382,12 +2381,6 @@ function initContactChecklistAndForm() {
       if (box) box.classList.toggle('checked');
     });
   });
-
-  if (resumeItem) {
-    resumeItem.addEventListener('click', () => {
-      openResumeModal();
-    });
-  }
 
   if (form) {
     form.addEventListener('submit', (e) => {
@@ -2417,12 +2410,6 @@ function openReceiptModal(name, email, message) {
   document.getElementById('receiptSenderName').textContent = name;
   document.getElementById('receiptSenderEmail').textContent = email;
   document.getElementById('receiptTime').textContent = new Date().toLocaleString();
-  modal.classList.add('active');
-}
-
-function openResumeModal() {
-  const modal = document.getElementById('resumeModal');
-  if (!modal) return;
   modal.classList.add('active');
 }
 
@@ -2606,7 +2593,7 @@ function initThorChat() {
 
     // 2. RESUME / CV / PDF DOWNLOAD
     if (has('resume', 'cv', 'pdf') || phrase('download resume') || phrase('view resume') || phrase('get resume')) {
-      return `📄 Azhar's resume is available in the portfolio. It highlights his technical skills, project work, professional experience, and certifications. ⚡`;
+      return `There isn't a resume download on this site. You can explore the selected projects or contact Azhar directly about your project.`;
     }
 
     // 3. EDUCATION / COLLEGE / DEGREE / UNIVERSITY / CGPA

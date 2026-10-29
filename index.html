@@ -330,9 +330,6 @@
           </a>
         </nav>
         <div class="mobile-nav-footer">
-          <button type="button" class="btn-secondary-outline mobile-resume-btn" onclick="document.getElementById('mobileNavDrawer').classList.remove('open'); document.getElementById('resumeModal').classList.add('active');">
-            📄 View Background
-          </button>
           <a href="#connect" class="btn-primary-dark mobile-talk-btn" onclick="document.getElementById('mobileNavDrawer').classList.remove('open');">
             ✉️ Discuss a Project
           </a>
@@ -420,7 +417,7 @@
 
             <div class="hero-cta-group">
               <a href="#connect" class="btn-primary-dark">Start a project ✉️</a>
-              <a href="#projects" class="btn-secondary-outline" id="heroResumeBtn">
+              <a href="#projects" class="btn-secondary-outline">
                 View my work ↓
               </a>
               <a href="#projects" class="btn-secondary-outline">See client work ↓</a>
@@ -1477,10 +1474,6 @@
                 <span class="custom-checkbox checked">✓</span>
                 <span>Dashboards and improvements to existing products</span>
               </li>
-              <li class="check-item" id="checkDownloadResume">
-                <span class="custom-checkbox"></span>
-                <span>Prefer to talk first? Email me about your goals.</span>
-              </li>
             </ul>
 
             <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px;">
@@ -1662,80 +1655,6 @@
       <div style="display: flex; justify-content: flex-end; gap: 14px; margin-top: 10px;">
         <button type="button" class="btn-primary-dark" style="padding: 10px 24px;" onclick="document.getElementById('projectModal').classList.remove('active');">
           Close Inspector
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. Resume Viewer / Download Modal -->
-  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
-    <div class="modal-window" style="max-width: 680px;">
-      <button type="button" class="modal-close-btn" aria-label="Close Resume Modal">✕</button>
-      <h3 id="resumeModalTitle" class="font-serif" style="font-size: 2.2rem; color: var(--primary); margin-bottom: 6px;">Syed Azhar Hussain</h3>
-      <p class="font-mono" style="font-size: 0.82rem; color: var(--chalk-dim); margin-bottom: 18px;">
-        FULL STACK DEVELOPER &amp; AUTOMATION ANALYST · CHENNAI, INDIA · azhar12082006@gmail.com
-      </p>
-
-      <div style="background: rgba(255,255,255,0.04); border-radius: 12px; padding: 20px; margin-bottom: 22px; font-family: var(--font-sans); font-size: 0.88rem; line-height: 1.6; max-height: 55vh; overflow-y: auto;">
-        <div style="margin-bottom: 14px;">
-          <h4 class="font-mono" style="color: var(--primary); font-size: 0.82rem; margin-bottom: 4px;">// PROFESSIONAL SUMMARY</h4>
-          <p style="margin: 0; color: var(--chalk);">
-            Freelance web developer building responsive business websites and custom web applications. I work directly with clients from the first brief through development, integrations, and launch, using React.js, Node.js, Python, Django, REST APIs, and Firebase.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 14px;">
-          <h4 class="font-mono" style="color: var(--primary); font-size: 0.82rem; margin-bottom: 4px;">// EDUCATION</h4>
-          <p style="margin: 0; color: var(--chalk);">
-            <strong>Bachelor of Engineering – Computer Science and Engineering</strong>
-          </p>
-        </div>
-
-        <div style="margin-bottom: 14px;">
-          <h4 class="font-mono" style="color: var(--primary); font-size: 0.82rem; margin-bottom: 4px;">// PROFESSIONAL EXPERIENCE</h4>
-          <p style="margin-bottom: 6px; color: var(--chalk);">
-            <strong>Full Stack Developer Intern (Python)</strong> | Trios Technologies (2026 – Present)<br>
-            • Contributing to 2+ production-grade web apps using Python, Django/Flask &amp; React.js.<br>
-            • Designed and integrated 5+ RESTful APIs connecting React front-end with databases.<br>
-            • Optimized SQL &amp; MongoDB queries reducing query response times; managed CI/CD on Vercel &amp; Render.
-          </p>
-          <p style="margin: 0; color: var(--chalk);">
-            <strong>Full Stack Developer Intern</strong> | Cognifyz IT Solutions Pvt. Ltd. (June 2026 – July 2026)<br>
-            • Delivered 3+ full-stack features using React.js &amp; RESTful APIs, reducing data handling time by ~25%.<br>
-            • Built 10+ dynamic, reusable UI components; resolved 15+ bugs across front-end &amp; back-end.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 14px;">
-          <h4 class="font-mono" style="color: var(--primary); font-size: 0.82rem; margin-bottom: 4px;">// CLIENT PROJECTS</h4>
-          <p style="margin: 0; color: var(--chalk);">
-            • <strong>Veedu Vadagaikku Chennai</strong> (Rental Platform): React (Vite), TanStack Query, Firebase, Firestore, REST APIs.<br>
-            • <strong>JP Holidays</strong>: 3,000+ tour package portal with WhatsApp enquiry routing and Schema.org SEO.<br>
-            • <strong>77 Fitness Studio</strong>: Multi-branch luxury fitness portal with Google Maps integration.<br>
-            • <strong>Aadhif's Wood Pressed Oils</strong>: Cold-pressed oil e-commerce with multi-size pricing and cart sync.<br>
-            • <strong>UniHut Tax &amp; Corpserv</strong>: Corporate legal, GST/ITR tax compliance portal.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="font-mono" style="color: var(--primary); font-size: 0.82rem; margin-bottom: 4px;">// TECHNICAL SKILLS</h4>
-          <p style="margin: 0; color: var(--chalk-dim);">
-            <strong>Front-End:</strong> React.js, HTML5, CSS3, JavaScript (ES6+), Responsive Web Design, DOM Manipulation<br>
-            <strong>Back-End:</strong> Python, Node.js, Django, Flask, Express.js, REST API Development<br>
-            <strong>Databases &amp; Cloud:</strong> MySQL, PostgreSQL, MongoDB, SQLite, Firebase Authentication, Firestore, Vercel, Render
-          </p>
-        </div>
-      </div>
-
-      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-        <a href="assets/Syed_Azhar_Hussain_Resume.pdf" download="Syed_Azhar_Hussain_Resume.pdf" class="btn-primary-dark" style="flex: 1; text-align: center; text-decoration: none;">
-          Download PDF Resume 📄
-        </a>
-        <a href="mailto:azhar12082006@gmail.com" class="btn-secondary-outline" style="text-decoration: none;">
-          Email Me ✉️
-        </a>
-        <button type="button" class="btn-secondary-outline" onclick="document.getElementById('resumeModal').classList.remove('active');">
-          Close
         </button>
       </div>
     </div>
