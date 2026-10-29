@@ -4617,7 +4617,7 @@ body {
 /* ------- FAB TOGGLE BUTTON ------- */
 .thor-chat-fab {
   position: relative;
-  width: 68px;
+  width: 69px;
   height: 68px;
   border-radius: 50%;
   border: none;
@@ -4648,7 +4648,7 @@ body {
 
 /* The avatar image inside FAB */
 .thor-fab-avatar {
-  width: 58px;
+  width: 59px;
   height: 58px;
   border-radius: 50%;
   object-fit: cover;
@@ -5060,12 +5060,12 @@ body {
   }
 
   .thor-chat-fab {
-    width: 60px;
+    width: 61px;
     height: 60px;
   }
 
   .thor-fab-avatar {
-    width: 50px;
+    width: 51px;
     height: 50px;
   }
 }
