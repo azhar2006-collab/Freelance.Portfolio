@@ -2269,21 +2269,19 @@ body {
   color: #071917;
 }
 .crt-screen-layout {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
 }
 @media (min-width: 600px) {
   .crt-screen-layout {
-    flex-direction: row;
+    grid-template-columns: minmax(0, 0.38fr) minmax(0, 1fr);
     gap: 16px;
   }
-  .crt-col-meta {
-    width: 38%;
-  }
-  .crt-col-bullets {
-    flex: 1;
-  }
+}
+.crt-col-meta,
+.crt-col-bullets {
+  min-width: 0;
 }
 .crt-project-title {
   font-family: var(--font-pixel), var(--font-sans);
@@ -2292,6 +2290,8 @@ body {
   color: #04211e;
   line-height: 1.15;
   margin-bottom: 6px;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 .crt-project-category {
   font-family: var(--font-mono);
